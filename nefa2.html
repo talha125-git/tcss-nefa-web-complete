@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+    <title>NEFA web 2 by TALHA</title>
+</head>
+
+<script>
+    function Menu(e) {
+        let list = document.querySelector('ul');
+
+        // Toggle the menu open/close
+        if (e.name === 'menu') {
+            e.name = "close";
+            list.classList.add('top-[55px]', 'opacity-100');  // Menu becomes visible
+            list.classList.remove('top-[-400px]', 'opacity-0'); // Remove hidden state
+        } else {
+            e.name = "menu";
+            list.classList.add('top-[-400px]', 'opacity-0');  // Menu becomes hidden
+            list.classList.remove('top-[55px]', 'opacity-100'); // Remove visible state
+        }
+    }
+
+
+
+
+</script>
+
+<body>
+    <!-- npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch -->
+
+    <!-- Header -->
+    <nav class="w-full h-14 fixed bg-transparent flex justify-between md:mt-10 px-5 lg:px-[50px] items-center md:px-4">
+        </a><div class=""></a><img src="nefa logo.svg" class="cursor-pointer" alt=""></div>
+
+        <ul class="bg-blue-100 lg:bg-transparent lg:flex lg:items-center z-[-1] lg:z-auto lg:static absolute w-full left-0 
+        lg:w-auto lg:py-0 py-4 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 flex 
+        lg:flex-row flex-col lg:gap-4 justify-start  lg:mr-44">
+
+            <li
+                class="mt-8 lg:mt-0 mx-[10px] cursor-pointer text-slate-500 hover:text-black transition-all duration-100">
+                <a href="#home"> Cryptocurrency</a>
+            </li>
+            <li
+                class="mt-8 lg:mt-0 mx-[10px] cursor-pointer text-slate-500 hover:text-black transition-all duration-100">
+                <a href="#project"> Exchanges</a>
+            </li>
+            <li
+                class="mt-8 lg:mt-0 mx-[10px] cursor-pointer text-slate-500 hover:text-black transition-all duration-100">
+                <a href="#education"> Watchlist</a>
+            </li>
+            <li
+                class="mt-8 lg:mt-0 mx-[10px] cursor-pointer text-slate-500 hover:text-black transition-all duration-100">
+                <a href="#contact"> NFT</a>
+            </li>
+            <li
+                class="mt-8 lg:mt-0 mx-[10px] cursor-pointer text-slate-500 hover:text-black transition-all duration-100">
+                <a href="#footer"> Portfolio</a>
+            </li>
+            <li
+                class="mt-8 lg:mt-0 mx-[10px] cursor-pointer text-slate-500 hover:text-black transition-all duration-100">
+                <a href="#footer"> Products</a>
+            </li>
+
+            <div class="lg:hidden mt-8 lg:mt-0 space-x-4">
+                <button
+                    class="bg-transparent text-blue-500 border border-blue-500 px-4 py-2 rounded-md hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+                    Login
+                </button>
+                <button
+                    class="bg-transparent text-blue-500 border border-blue-500 px-4 py-2 rounded-md hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+                    SignUp
+                </button>
+            </div>
+
+
+        </ul>
+
+        <div class="lg:hidden">
+            <a href="#" name="menu" onclick="Menu(this)" class="text-4xl">&#8801;</a>
+        </div>
+        <div class="lg:block hidden   space-x-4">
+            <button
+                class="bg-transparent text-blue-500 border border-blue-500 px-6 py-2 rounded-[2rem] hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+                Login
+            </button>
+            <button
+                class=" text-white bg-blue-500 border border-blue-500 px-6 py-2 rounded-[2rem] hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+                SignUp
+            </button>
+        </div>
+    </nav>
+
+    <!-- Home section -->
+    <section class="w-full h-auto bg-sky-100 px-7 md:px-[65px] " id="home">
+        <div class="flex flex-col lg:flex-row   ">
+            <div class="left mt-40 ">
+                <div class="text-center md:text-left">
+                    <h2 class="uppercase text-blue-600 font-medium mb-3">Sign Up Today</h2>
+                    <h1 class="font-bold mb-8 text-[40px] md:text-[70px] text-center md:text-left md:leading-[70px]">
+                        The World's
+                        <span class="text-blue-500"> Fastest Growing</span> Crypto Web App
+                    </h1>
+                    
+                    <p class="text-slate-800 text-[20px] mb-5 hidden md:block">Buy and sell 200+ cryptocurrencies with 20+ flat
+                        currencies using
+                        bank transfers or your
+                        credit/debit card.
+                    </p>
+                </div>
+
+
+                <div
+                    class="space-x-4 mb-8 space-y-4 md:space-y-0 flex flex-col md:flex-row justify-center md:justify-start mr-5 ">
+                    <button
+                        class="text-white bg-blue-500 border border-blue-500 px-6 py-4 rounded-[2rem] hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+                        Get Started
+                    </button>
+                    <button
+                        class="bg-transparent  text-blue-500 border border-blue-500 px-6 py-4 rounded-[2rem] hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+                        Download App
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="flex flex-col justify-center mr-16">
+                <img class="hidden lg:block mt-10" src="star.a8c53d6.png" alt="">
+            </div>
+
+            <div class="flex flex-col mr-12">
+                <img class="hidden lg:block mt-44" src="ellipse-2.4f6027c.png" alt="">
+            </div>
+
+
+            <div class="right  mt-20 lg:mt-40 md:block hidden ">
+                <img src="hero-image.15eeae4.webp" class="w-full lg:w-[1500px]" alt="">
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- tables section -->
+    <section class="Table w-full h-auto px-4">
+        <div class="flex flex-wrap lg: mt-12  items-center justify-center w-full shadow-lg rounded-lg    ">
+
+
+
+            <div class="w-full lg:w-[32%] px-2 mb-4 lg:border-r lg:px-8">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center">
+                        <img class="w-6 h-6 mr-2" src="fire.jfif" alt="fire"> <!-- Small image like emoji -->
+                        <h2>Trending</h2>
+                    </div>
+                    <span class="text-blue-700">more ></span>
+                </div>
+
+                <table class="w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2">Name</th>
+                            <th class="px-4 py-2">Price</th>
+                            <th class="px-4 py-2">Chart</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody class="text-center"> <!-- Center text inside tbody -->
+                        <tr class="border-b-2 border-slate-200">
+                            <td class="mt-6 px-4 py-2 lg:py-2 lg:px-4 flex justify-center items-center space-x-4">
+                                <img class="w-6 h-6" src="bitcoin img.png" alt="bitcoin">
+                                <span>Bitcoin</span>
+                            </td>
+                            <td class="price px-4 py-2 lg:py-2 lg:px-4"><span class="text-green-500 font-bold text-[25px]">+</span>$43180.13</td>
+                            <td class="lg:py-2 lg:px-4"><img class="chart" src="charrt1.png"  alt=""></td>
+                        </tr>
+                
+                        <tr class="border-b-2 border-slate-200">
+                            <td class="mt-6 flex justify-center items-center lg:py-2 lg:px-4 space-x-2">
+                                <img class="w-6 h-6" src="etherereum.png" alt="ethereum">
+                                <span>Ethereum</span>
+                            </td>
+                            <td class="price px-4 py-2 lg:py-2 lg:px-4"><span class="text-red-500 font-bold text-[25px]">-</span>$3480.65</td>
+                            <td class="lg:py-2 lg:px-4"><img class="chart" src="ethe graph.png" alt=""></td>
+                        </tr>
+                
+                        <tr class="border-b-2 border-slate-200">
+                            <td class="mt-6 flex justify-center items-center lg:py-2 lg:px-4 space-x-2">
+                                <img class="w-6 h-6" src="salana.png" alt="solana">
+                                <span>Solana</span>
+                            </td>
+                            <td class="price px-4 py-2 lg:py-2 lg:px-4"><span class="text-green-500 font-bold text-[25px]">+</span>$150.2</td>
+                            <td class=" lg:py-2 lg:px-4"><img class="chart" src="salana graph.png" alt=""></td>
+                        </tr>
+                
+                        <tr class="border-b-2 border-slate-200">
+                            <td class="mt-6 flex justify-center items-center lg:py-2 lg:px-4 space-x-2">
+                                <img class="w-6 h-6" src="dogecoin.png" alt="dogecoin">
+                                <span>Dogecoin</span>
+                            </td>
+                            <td class="price px-4 py-2 lg:py-2 lg:px-4"><span class="text-green-500 font-bold text-[25px]">+</span>$0.1572</td>
+                            <td class="lg:py-2 lg:px-4"><img class="chart" src="doge grapg.png" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                
+            </div>
+
+
+            <div class="w-full lg:w-[32%] px-2 mt-6 lg:mt-0 mb-4 lg:border-r lg:px-8">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center">
+                        <img class="w-6 h-6 mr-2" src="plane2.png" alt="fire"> <!-- Small image like emoji -->
+                        <h2>Top Gainers</h2>
+                    </div>
+                    <span class="text-blue-700">more ></span>
+                </div>
+
+                <table class="w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2">Name</th>
+                            <th class="px-4 py-2">Price</th>
+                            <th class="px-4 py-2">Chart</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody class="text-center"> <!-- Center text inside tbody -->
+                        <tr class="border-b-2 border-slate-200">
+                            <td class="mt-6 px-4 py-2 lg:py-2 lg:px-4 flex justify-center items-center space-x-4">
+                                <img class="w-6 h-6" src="pappay.4e13578.png" alt="bitcoin">
+                                <span>PAPPAY</span>
+                            </td>
+                            <td class="price px-4 py-2 lg:py-2 lg:px-4"><span class="text-green-500 font-bold text-[25px]">+</span>$0.00374</td>
+                            <td class="lg:py-2 lg:px-4"><img class="chart" src="papy g.png" alt=""></td>
+                        </tr>
+                
+                        <tr class="border-b-2 border-slate-200">
+                            <td class="mt-6  flex justify-center items-center lg:py-2 lg:px-4  space-x-2">
+                                <img class="w-6 h-6" src="bit asia.png" alt="ethereum">
+                                <span class="">Bit Asia</span>
+                            </td>
+                            <td class="price px-4 py-2 lg:py-2 lg:px-4"><span class="text-green-500 font-bold text-[25px]">+</span>$0.02096</td>
+                            <td class="lg:py-2 lg:px-4"><img class="chart" src="bit asia g.png" alt=""></td>
+                        </tr>
+                
+                        <tr class="border-b-2 border-slate-200">
+                            <td class="mt-6 flex justify-center items-center lg:py-2 lg:px-4 space-x-2">
+                                <img class="w-6 h-6" src="moonrock.71ab538.png" alt="solana">
+                                <span>MoonRock</span>
+                            </td>
+                            <td class="price px-4 py-2 lg:py-2 lg:px-4"><span class="text-green-500 font-bold text-[25px]">+</span>$0.004907</td>
+                            <td class="lg:py-2 lg:px-4"><img class="chart" src="moon r g.png" alt=""></td>
+                        </tr>
+                
+                        <tr class="border-b-2 border-slate-200">
+                            <td class="mt-6 flex justify-center items-center lg:py-2 lg:px-4 space-x-2">
+                                <img class="w-6 h-6" src="ninjafloki.768bc7a.png" alt="dogecoin">
+                                <span>NinjaFloki</span>
+                            </td>
+                            <td class="price px-4 py-2 lg:py-2 lg:px-4"><span class="text-green-500 font-bold text-[25px]">+</span>$0.000123</td>
+                            <td class="lg:py-2 lg:px-4"><img class="chart" src="ninja g.png" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                
+            </div>
+
+            <div class="w-full lg:w-[32%] px-2 mt-6 lg:mt-0 mb-4 lg:border-r-0 lg:px-8">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center">
+                        <img class="w-6 h-6 mr-2" src="diamond.jfif" alt="fire"> <!-- Small image like emoji -->
+                        <h2>Recently Added</h2>
+                    </div>
+                    <span class="text-blue-700">more ></span>
+                </div>
+
+                <table class="w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2">Name</th>
+                            <th class="px-4 py-2">Price</th>
+                            <th class="px-4 py-2">Chart</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody class="text-center"> <!-- Center text inside tbody -->
+                        <tr class="border-b-2 border-slate-200">
+                            <td class="mt-6 px-4 py-2 lg:py-2 lg:px-4 flex justify-center items-center space-x-4">
+                                <img class="w-6 h-6" src="meta craft.png" alt="bitcoin">
+                                <span>MetaCraft</span>
+                            </td>
+                            <td class="price px-4 py-2 lg:py-2 lg:px-4"><span class="text-red-500 font-bold text-[25px]">-</span>$0.0608</td>
+                            <td class="lg:py-2 lg:px-4"><img class="chart" src="meta Craft g.png" alt=""></td>
+                        </tr>
+                
+                        <tr class="border-b-2 border-slate-200">
+                            <td class="mt-6 flex justify-center items-center lg:py-2 lg:px-4  space-x-2">
+                                <img class="w-6 h-6" src="frog.ae03a20.png" alt="ethereum">
+                                <span>Frog</span>
+                            </td>
+                            <td class="price px-4 py-2 lg:py-2 lg:px-4"><span class="text-red-500 font-bold text-[25px]">-</span>$0.5875</td>
+                            <td class="lg:py-2 lg:px-4"><img class="chart" src="frog g.png" alt=""></td>
+                        </tr>
+                
+                        <tr class="border-b-2 border-slate-200">
+                            <td class="mt-6 flex justify-center items-center lg:py-2 lg:px-4 space-x-2">
+                                <img class="w-6 h-6" src="musk-doge.f53083a.png" alt="solana">
+                                <span>MuskDoge</span>
+                            </td>
+                            <td class="price px-4 py-2 lg:py-2 lg:px-4"><span class="text-green-500 font-bold text-[25px]">+</span>$0.04041</td>
+                            <td class="lg:py-2 lg:px-4"><img class="chart" src="musk doge g.png" alt=""></td>
+                        </tr>
+                
+                        <tr class="border-b-2 border-slate-200">
+                            <td class="mt-6 flex justify-center items-center lg:py-2 lg:px-4 space-x-2">
+                                <img class="w-6 h-6" src="2share.785d7a0.png" alt="dogecoin">
+                                <span>2SHARE</span>
+                            </td>
+                            <td class="price px-4 py-2 lg:py-2 lg:px-4"><span class="text-green-500 font-bold text-[25px]">+</span>$1366.24</td>
+                            <td class="lg:py-2 lg:px-4"><img class="chart" src="2share g.png" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                
+            </div>
+
+
+        </div>
+
+    </section>
+
+    
+
+    <!-- Buy & trade sec -->
+    <section class="w-full h-auto">
+        <div class="flex lg:flex-row flex-col justify-between px-4 py-4 mt-20">
+            <div class="lift mt-14 ml-9 ">
+                <h1 class="font-medium text-[40px] mb-4">Buy & trade on the <br class="hidden md:block"> original crypto
+                    exchange.</h1>
+                <p class="flex flex-wrap mb-5  ">Buy now and get 40% extra bonus Minimum pre-sale
+                    amount 25 Crypto Coin. <br class="hidden lg:block"> We accept BTC crypto-currency
+                </p>
+                <div class="mr-5 lg:mr-0 flex flex-col">
+                    <div class="flex  lg:flex-row space-x-4">
+                        <div class="flex lg:w-[390px] w-full items-center border-blue-500 border-2 p-2 rounded-xl">
+                            <p class="px-2 py-1 border-r border-blue-500">Amount</p>
+                            <input type="number" value="5.000"
+                                class="flex-1 px-2 py-1 w-full bg-slate-100 border-none outline-none text-right">
+                        </div>
+
+                        <div class="flex justify-center  mt-2 lg:mt-0 ">
+                            <button class="flex space-x-3 border-2 border-blue-500 p-5 rounded-xl">
+                                <img src="america flag.png" alt="" class="w-6 h-6 mr-2">
+                                <p>USD</p>
+                                <i class="bi bi-caret-down px-3"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex  lg:flex-row space-x-4">
+                        <div class="flex mt-4 lg:w-[390px] w-full items-center border-blue-500 border-2 p-3  rounded-xl">
+                            <p class="px-6 py-1 border-r border-blue-500">Get</p>
+                            <input type="number" value="0.10901"
+                                class="flex-1 px-2 py-1 border-none bg-slate-100 w-full outline-none text-right">
+                        </div>
+
+                        <div class="flex mt-4 justify-center ">
+                            <button class="flex space-x-3 items-center ml border-2 border-blue-500 p-5 rounded-xl">
+                                <img src="bitcoin img.png" alt="" class="w-6 h-6 mr-2">
+                                <p>BTC</p>
+                                <i class="bi bi-caret-down px-3" ></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-6 w-full space-x-4 mb-8 space-y-4 md:space-y-0">
+                    <button
+                        class="w-full lg:w-[540px] text-white bg-blue-500 border border-blue-500 px-6 py-4 rounded-[2rem] hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+                        Buy Now
+                    </button>
+
+                </div>
+
+
+            </div>
+            <div class=" flex justify-center">
+                <img src="buy-img.webp" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Partners sec -->
+    <section class="w-full h-auto mt-24 mb-32 px-6">
+        <div class="border py-12 bg-amber-100 rounded-lg px-1">
+            <div class="flex flex-col justify-center items-center mb-4">
+                <h1 class="font-bold text-2xl text-center">Trusted Partners Worldwide</h1>
+                <p class="flex flex-wrap text-center pt-5">
+                    We're partners with countless major
+                    organisations around the globe
+                </p>
+            </div>
+
+            <div class="flex flex-wrap justify-center mt-4">
+                <img src="cleaver company.png" alt="">
+                <img src="diamon company.png" alt="">
+                <img src="swiss-finance  company.png" alt="">
+                <img src="gambio comapny.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Credit card -->
+
+    <section class="w-full h-auto pb-28 px-2">
+        <div class="flex flex-col-reverse lg:flex-row justify-evenly px-8 lg:px-0 ">
+            <div class="lg:w-[500px] mt-9">
+                <img src="atm.webp" alt="">
+            </div>
+            <div class="mt-3 text-xl lg:flex lg:flex-col lg:justify-start">
+                <h1 class="font-medium text-center  lg:text-left text-4xl">Introducing the <span class="text-blue-700">
+                        NEFA </span> <br class="lg:block hidden"> Credit Card</h1>
+                <p class="mt-3 text-center lg:text-left">
+                    Subject to cardholder and rewards
+                    terms which will be <br class="lg:block hidden"> available at application.
+                </p>
+                <ul class="ml-4 mt-4 space-y-2">
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="blue" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="blue" class="w-4 h-4 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        Up to 3% back on purchases
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="blue" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="blue" class="w-4 h-4 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        Earn rewards in bitcoin or any crypto on NEFA
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="blue" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="blue" class="w-4 h-4 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        No annual fee
+                    </li>
+                </ul>
+
+                <div class="flex mt-4 justify-center md:justify-start">
+                    <button
+                        class="w-full md:w-auto bg-transparent text-blue-500 border border-blue-500 px-6 py-4 rounded-[2rem] hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+                        Join the waitlist
+                    </button>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- tool sec -->
+    <section class="w-full h-auto py-8 px-6">
+        <div class="flex flex-col lg:flex-row bg-slate-100 rounded-xl justify-evenly px-6 lg:px-2">
+            <div class="mt-16 ml-4">
+                <h1 class="text-4xl font-bold text-center lg:text-start">Advanced Trading <span class="text-blue-600">
+                        Tools </span></h1>
+                <div class="mt-4">
+                    <h3 class="text-xl font-medium">Professional Access, Non-stop Availability</h3>
+                    <p>
+                        We provide premium access to crypto trading for both <br class="lg:block hidden"> individuals
+                        and institutions through high liquidity, reliable <br class="lg:block hidden"> order
+                        execution and constant uptime.
+                    </p>
+
+                    <h3 class="text-xl font-medium mt-3">A Range of Powerful Apis</h3>
+                    <p>
+                        Set up your own trading interface or deploy your algorithmic <br class="lg:block hidden">
+                        strategy with our high-performance FIX and HTTP APIs. Connect <br class="lg:block hidden">
+                        to our WebSocket for real-time data streaming.
+                    </p>
+
+                    <h3 class="text-xl font-medium mt-3">Customer Support</h3>
+                    <p>
+                        Premium 24/7 support available to all customers worldwide <br class="lg:block hidden">
+                        by phone or email. Dedicated account managers for partners.
+                    </p>
+                </div>
+
+                <div
+                    class=" flex flex-col md:flex-row space-x-4 text-center lg:text-start mb-8 mt-4 space-y-4 lg:space-y-0">
+                    <button
+                        class="bg-transparent text-blue-500 border border-blue-500 px-11 py-4 rounded-[2rem] hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+                        Get Started
+                    </button>
+                    <button
+                        class="bg-transparent text-blue-500 border-0 border-blue-500 px-11 py-4  rounded-[2rem] hover:shadow-blue-500 hover:shadow-md hover:shadow-b-md transition-all">
+                        Learn More
+                    </button>
+                </div>
+
+            </div>
+
+            <div class=" flex justify-center lg:w-[600px]">
+                <img src="tools.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Security sec -->
+    <section class="w-full h-auto pb-5 px-6 py-6">
+        <div class="flex flex-col-reverse lg:flex-row lg:space-x-16 px-1 py-6">
+
+            <div class="lg:w-[600px] flex justify-center">
+                <img src="security.webp" alt="">
+            </div>
+            <div class=" mt-12">
+                <h1 class="text-4xl font-bold text-center lg:text-left">Industry-leading <br class="lg:block hidden">
+                    security from day one</h1>
+                <div class="mt-5 ml-4 lg:ml-0">
+                    <h3 class="font-medium text-xl  text-slate-900 mb-1">Safety, security and compliance</h3>
+                    <p class="mb-3 text-slate-700">
+                        <span>✔️</span>
+                        NEFA is a licensed New York trust company that undergoes <br class="lg:block hidden">
+                        regular bank exams and is subject to the cybersecurity <br class="lg:block hidden">
+                        audits conducted by the New York Department of Financial <br class="lg:block hidden">
+                        Services. <u>Learn more</u> about our commitment to security. <br class="lg:block hidden">
+
+                    </p>
+
+                    <h3 class="font-medium text-xl  text-slate-900 mb-1">Hardware security keys</h3>
+                    <p class="mb-3  text-slate-700">
+                        <span>✔️</span>
+                        With NEFA you can secure your
+                        account with a <br class="lg:block hidden"> hardware security key via WebAuthn.
+                    </p>
+
+                    <h3 class="font-medium text-xl  text-slate-900 mb-1">SOC Certifications</h3>
+                    <p class=" text-slate-700">
+                        <span>✔️</span>NEFA is <u>SOC 1 Type 2</u> and <u>SOC 2 Type 2</u> compliant.
+                        We are <br class="lg:block hidden"> the world’s first cryptocurrency exchange
+                        and custodian to <br class="lg:block hidden"> complete these exams.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    
+
+    <!-- Get started sec -->
+    <section class="w-full h-auto py-8 px-6 mt-20">
+        <div class="flex flex-col justify-center items-center mt-6 bg-blue-100 rounded-xl py-4">
+            <div class="text-center">
+                <h1 class="font-medium text-4xl my-5">Get started in just a few minutes</h1>
+            </div>
+            <div class="flex flex-col md:flex-row justify-evenly space-x-6 space-y-6 md:space-y-0 flex-wrap px-3 sm:px-0">
+                <div>
+                    <div class="flex justify-center">
+                        <img src="sign-up.4afd242.png" alt="">
+                    </div>
+                    <h2 class="text-center font-medium text-xl mb-3">Sign Up</h2>
+                    <p class="text-center">Sign up for your free NEFA Wallet on web, iOS or <br class="hidden sm:block">
+                        Android and follow our easy process to set up your <br class="hidden sm:block">
+                        profile
+                    </p>
+                </div>
+                <div>
+                    <div class="flex justify-center">
+                        <img src="fund.93372b0.png" alt="">
+                    </div>
+                    <h2 class="text-center font-medium text-xl mb-3">Fund</h2>
+                    <p class="text-center">Choose your preferred payment method such as <br class="hidden sm:block">
+                        bank transfer or credit card to top up your NEFA <br class="hidden sm:block">
+                        Wallet
+                    </p>
+                </div>
+                <div>
+                    <div class="flex justify-center">
+                        <img src="buy-crypto.46d8692.png" alt="">
+                    </div>
+                    <h2 class="text-center font-medium text-xl mb-3">Buy Crypto</h2>
+                    <p class="text-center">Buy Bitcoin or Ethereum, then securely store it in <br class="hidden sm:block">
+                        your Wallet or send it on easily to your friends <br class="hidden sm:block">
+                        anywhere
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs sec -->
+    <section class="w-full h-auto px-6">
+        <div class="flex flex-col-reverse justify-evenly lg:flex-row lg:items-start">
+            <!-- Image Section -->
+            <div class="flex justify-center   lg:w-1/2">
+                <img src="faq.webp" alt="" class="w-full max-w-lg lg:max-w-full lg:w-auto lg:h-full object-cover">
+            </div>
+    
+            <!-- FAQ Section -->
+            <div class="ml-0 lg:ml-32 mt-10 lg:w-1/2">
+                <div class="mb-7">
+                    <h3 class="text-blue-600 text-xl font-medium">Support</h3>
+                    <h1 class="text-4xl font-medium ">Frequently asked questions</h1>
+                </div>
+                <div class="space-y-4 mr-10">
+                    <details class="border-b-2 py-4">
+                        <summary class="cursor-pointer">Why should I choose NEFA?</summary>
+                        <p class="mt-2 text-gray-700">
+                            We're industry pioneers, having been in the cryptocurrency industry since 
+                            2016. We've facilitated more than 21 billion USD worth of transactions on 
+                            our exchange for customers in over 40 countries. Today, we're trusted by 
+                            over 8 million customers around the world and have received praise for 
+                            our easy-to-use app, secure wallet, and range of features.
+                        </p>
+                    </details>
+    
+                    <details class="border-b-2 py-4">
+                        <summary class="cursor-pointer">How secure is NEFA?</summary>
+                        <p class="mt-2 text-gray-700">
+                            We're industry pioneers, having been in the cryptocurrency industry since 
+                            2016. We've facilitated more than 21 billion USD worth of transactions on 
+                            our exchange for customers in over 40 countries. Today, we're trusted by 
+                            over million customers around the world and have received praise for 
+                            our easy-to-use app, secure wallet, and range of features.
+                        </p>
+                    </details>
+    
+                    <details class="border-b-2 py-4">
+                        <summary class="cursor-pointer">Do I have to buy a whole Bitcoin?</summary>
+                        <p class="mt-2 text-gray-700">
+                            We're industry pioneers, having been in the cryptocurrency industry since 
+                            2016. We've facilitated more than 21 billion USD worth of transactions on 
+                            our exchange for customers in over 40 countries. Today, we're trusted by 
+                            over million customers around the world and have received praise for 
+                            our easy-to-use app, secure wallet, and range of features.
+                        </p>
+                    </details>
+    
+                    <details class="border-b-2 py-4">
+                        <summary class="cursor-pointer">How do I actually buy Bitcoin?</summary>
+                        <p class="mt-2 text-gray-700">
+                            We're industry pioneers, having been in the cryptocurrency industry since 
+                            2016. We've facilitated more than 21 billion USD worth of transactions on 
+                            our exchange for customers in over 40 countries. Today, we're trusted by 
+                            over million customers around the world and have received praise for 
+                            our easy-to-use app, secure wallet, and range of features.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- back to top btn -->
+    <div class="flex justify-center text-center pt-7 -mb-16">
+        <a href="#home">
+            <button
+                class=" flex rounded-md border border-slate-400 hover:shadow-md px-8 py-4 bg-slate-100 hover:bg-slate-200">
+                Back to top <p class="text-slate-600 ml-1">&#9650;</p>
+            </button>
+        </a>
+    </div>
+
+    <!-- footer -->
+    
+    <footer class="relative " id="footer">
+        <!-- Logo positioned in the top-left corner -->
+        <div class="absolute hidden lg:block top-0 left-0 p-4">
+            <img src="nefa logo.svg" alt="NEFA Logo" class="w-20 h-20">
+        </div>
+    
+        <!-- Main content -->
+        <div class="flex flex-col lg:flex-row justify-center items-center mt-24 px-5 ">
+            <div class="flex flex-col lg:flex-row justify-center space-y-4 md:space-y-6  lg:space-y-0 lg:space-x-20 w-full md:border-b md:border-t md:pb-10 lg:pb-0  border-slate-300  lg:py-0">
+    
+                <div class="flex flex-col md:flex-row md:space-x-48 md:justify-evenly lg:space-x-28 border-b border-slate-300 lg:border-b-0 lg:border-r  lg:px-16 py-8 lg:py-10 ">
+                    <div class="flex flex-col border-b border-slate-300 py-6 md:py-0 md:border-b-0">
+                        <ul class="list-none mt-2 space-y-5">
+                            <li><a href="#" class="text-slate-600 hover:text-slate-900">Cryptocurrency</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-slate-900">Exchanges</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-slate-900">Watchlist</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-slate-900">Portfolio</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-slate-900">NFT</a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="flex flex-col mt-10 md:mt-0">
+                        <ul class="list-none mt-2 space-y-5">
+                            <li><a href="#" class="text-slate-600 hover:text-slate-800">Products</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-slate-800">About Us</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-slate-800">Careers</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-slate-800">Blog</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-slate-800">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+    
+                <div class="flex flex-col md:flex-row  md:space-x-8  md:ml-16 md:justify-evenly lg:space-x-24 lg:py-10">
+                    <div class="flex flex-col lg:ml-16">
+                        <ul class="list-none mt-2 space-y-5">
+                            <li><a href="#" class="text-slate-600 hover:text-slate-800">Help Center</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-slate-800">Contact Us</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-slate-800">System Status</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-slate-800">Area of Availability</a></li>
+                            <li><a href="#" class="text-slate-600 hover:text-slate-800">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="flex flex-col mt-6  ">
+                        <h3 class="text-lg font-bold text-gray-800">Newsletter</h3>
+                        <p class="text-gray-600 mt-2">Never miss anything crypto when you're on the go</p>
+                        <div class="flex mt-4">
+                            <input type="text" placeholder="Enter your email"
+                                class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500">
+                            <button
+                                class="px-4 py-2 ml-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <div class="mt-4 text-center text-gray-600 mb-4">
+        © Copyright 2022 NEFA LLC. All rights reserved
+    </div>
+    
+
+
+
+</body>
+
+
+
+<!-- link for icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</html>
